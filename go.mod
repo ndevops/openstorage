@@ -121,14 +121,6 @@ require (
 
 replace github.com/kubernetes-incubator/external-storage => github.com/libopenstorage/external-storage v5.2.0-openstorage+incompatible
 
-exclude github.com/Sirupsen/logrus v1.4.0
+replace github.com/Sirupsen/logrus => github.com/sirupsen/logrus v1.0.5
 
-exclude github.com/Sirupsen/logrus v1.3.0
-
-exclude github.com/Sirupsen/logrus v1.2.0
-
-exclude github.com/Sirupsen/logrus v1.1.1
-
-exclude github.com/Sirupsen/logrus v1.1.0
-
-exclude github.com/Sirupsen/logrus v1.0.6
+replace github.com/docker/distribution/digest => github.com/opencontainers/go-digest v0.0.0-20190306001800-ac19fd6e74
