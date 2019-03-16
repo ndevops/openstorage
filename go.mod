@@ -118,3 +118,17 @@ require (
 	k8s.io/client-go v8.0.0+incompatible
 	k8s.io/kubernetes v1.9.6
 )
+
+replace github.com/kubernetes-incubator/external-storage => github.com/libopenstorage/external-storage v5.2.0-openstorage+incompatible
+
+exclude github.com/Sirupsen/logrus v1.4.0
+
+exclude github.com/Sirupsen/logrus v1.3.0
+
+exclude github.com/Sirupsen/logrus v1.2.0
+
+exclude github.com/Sirupsen/logrus v1.1.1
+
+exclude github.com/Sirupsen/logrus v1.1.0
+
+exclude github.com/Sirupsen/logrus v1.0.6
