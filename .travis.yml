@@ -11,7 +11,7 @@ install:
   - go get -u github.com/go-swagger/go-swagger/cmd/swagger
 script:
   - git-validation -run DCO,short-subject
-  - go fmt $(go list ./... | grep -v vendor) | wc -l | grep 0
+  - go fmt $(go list ./... | egrep -v 'vendor|csi/node_test') | wc -l | grep 0
   - make docker-proto
   - git diff $(find . -name "*.pb.*go" -o -name "api.swagger.json" | grep -v vendor) | wc -l | grep "^0"
   - make sdk-check-version
